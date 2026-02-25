@@ -1,0 +1,254 @@
+
+
+
+#header {
+    align-items:center;
+    margin: 0px 20px;
+    justify-content: space-between;
+    display:flex;
+    padding:0 10px;
+    color:white;
+    font-size: 20px;
+    background-color: rgb(59, 38, 13);
+    border-color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 5px rgb(126, 109, 109);
+    box-shadow: 0 5px 3px rgb(87, 86, 83);
+    border-radius: 10px;
+    z-index:999;
+    position: sticky;
+    top: 0;
+}
+#navbar ul {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 2px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:80px;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 40px;
+    padding-right:20px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+}
+#navbar li a:hover{
+    color:rgb(38, 228, 171);
+    z-index: 2;
+    text-decoration: underline;
+}
+#navbar li a.active {
+    text-decoration: underline  rgb(38, 228, 171);
+    color:rgb(38,228,171);
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    font-size: 40px;
+    justify-content:center;
+    color:white;
+    margin:10px 20px;
+    
+    border-radius: 10px;
+    background-image: url("images/home.jpg");
+    height:90vh;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+#intro div {
+padding-left: 30px;
+}
+
+#categories {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: center;
+   
+}
+#categ {
+    border:3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding:5px;
+    box-shadow: 3px 3px grey;
+    background-color: rgb(226, 199, 155);
+}
+#categ img:hover{
+    border:4px solid black;
+}
+#sample img{
+    border:3px solid rgb(44, 44, 42);
+    background-color: white;
+    height:200px;
+    width:200px;
+    border-radius: 10px;
+}
+#info{
+    text-decoration: none;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+#rate{
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: left;
+}
+#end {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-right:25%;
+    margin-left: 25%;
+    border-radius: 1000px;
+    box-shadow: 4px 4px grey;
+
+
+}
+#che{
+    height:500px;
+    width:500px;
+}
+#gs {
+    width:160px;
+    padding: 5px;
+    background-color: rgb(68, 57, 9);
+    border-radius: 10px;
+    color:aliceblue;
+    text-align: center;
+    font-family:cursive;
+   
+}
+#notice {
+    border: 5px solid rgb(95, 70, 24);
+    color: rgb(95,70,24);
+    background-color:rgb(226, 199, 155);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 25px;
+    box-shadow: 3px grey;
+}
+#breakfast {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+}
+#breakfast img {
+    border-radius: 10px;
+}
+#binfo {
+    color:azure;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    background-image: url(images/binfo.jfif);
+    background-size: 100% 100%;
+    height:500px;
+    border: 3px solid black;
+    padding:10px;
+    font-size:30px;
+    border-radius: 10px;
+}
+#ord {
+    height:25px;
+    border-color: bisque;
+    background-color: bisque;
+    border-radius: 300px;
+    box-shadow: 3px 3px grey;
+}
+#oban {
+    background-image: url(images/odban.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size:50px;
+    color:bisque;
+    display: flex;
+    margin: 30px;
+    border:5px solid black;
+    border-radius: 20px;
+    padding:10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+}
+#odtab {
+    margin:30px;
+    width: 100%;
+}
+#odtab table{
+    margin:30px;
+    padding: 5px;
+    justify-content:center;
+    border-spacing: 3px;
+}
+#odtab table td {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 40px;
+    border:1px solid black;
+    box-shadow: 3px black;
+    border-radius: 10px;
+}
+#odtab table td img {
+    border-radius: 10px;
+}
+#payport {
+    background-image: url(images/pay.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left:20%;
+    font-size:40px;
+    font-weight: 100px;
+    border:3px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width:1000px;
+    height:500px;
+    flex-direction: row;
+    border-radius: 10px;
+}
+#payport table{
+    color:bisque;
+    padding: 10px; 
+}
+#bye {
+    border:2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px gray;
+    background-size: cover;
+    display: flex;
+    color:black;
+    margin:30px;
+    align-items: right;
+    justify-content: right;
+    flex-direction: column;
+    background-image: url(images/en.jpg);
+}
+#about {
+    border:4px solid black;
+    font-size:30px;
+    padding:20px;
+    margin:30px;
+    border-radius: 20px;
+}
+#about h1 {
+    text-decoration: underline;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .cal {
+            background-color:black;
+            margin-left:30%;
+            margin-right:43%;
+            margin-top:10%;
+            margin-bottom:20%;
+            border-radius: 20px;
+            padding:30px;
+            color:white
+        }
+        .bu {
+            background-color:darkslategrey;
+            width:60px;
+            height:60px;
+            padding:40px;
+            border-radius: 5px;
+            margin:5px;
+            font-size: 20px;
+            color:white;
+        }
+        .dis{
+            background-color:darkslategrey;
+            height:100px;
+            text-align:right;
+            width:360px;
+            border-radius: 5px;
+            margin:10px;
+            font-size:20px;
+            color:white;
+        }
+    </style>
+       <script type="text/javascript">
+		let displayValue = '';
+		
+		function clearDisplay() {
+			displayValue = '';
+			document.getElementById('display').value = displayValue;
+		}
+		
+		function deleteLast() {
+			displayValue = displayValue.slice(0, -1);
+			document.getElementById('display').value = displayValue;
+		}
+		
+		function appendValue(value) {
+			displayValue += value;
+			document.getElementById('display').value = displayValue;
+		}
+		
+		function calculateResult() {
+			try {
+				displayValue = eval(displayValue);
+				document.getElementById('display').value = displayValue;
+			} catch (error) {
+				document.getElementById('display').value = 'Error';
+			}
+		}
+	</script>
+</head>
+<body bgcolor="grey">
+    <div class="cal">
+        <div>
+            <input type="text" id="display" disabled class="dis">
+        </div>
+        <div>
+            <span>
+                <button class="bu" onclick="clearDisplay()">AC</button>
+                <input type="button" value="De" class="bu" onclick="deleteLast()"/>
+                <input type="button" value="." class="bu"onclick="appendValue('.')"/>
+                <input type="button" value="/" class="bu" onclick="appendValue('/')"/>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="appendValue('7')" class="bu">7</button>
+                <button onclick="appendValue('8')" class="bu">8</button>
+                <button onclick="appendValue('9')" class="bu">9</button>
+                <button onclick="appendValue('+')" class="bu">+</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="appendValue('4')" class="bu">4</button>
+                <button onclick="appendValue('5')" class="bu">5</button>
+                <button onclick="appendValue('6')" class="bu">6</button>
+                <button onclick="appendValue('-')" class="bu">-</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="appendValue('1')" class="bu">1</button>
+                <button onclick="appendValue('2')" class="bu">2</button>
+                <button onclick="appendValue('3')" class="bu">3</button>
+                <button onclick="appendValue('*')" class="bu">*</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <input type="button" value="00" class="bu " onclick="appendValue('00')">
+                <input type="button" value="0" class="bu" onclick="appendValue('0')">
+                <input type="button" value="=" class="bu" style="width:175px" onclick="calculateResult()">
+            </span>
+        </div>
+    </div>
+</body>
+</html>

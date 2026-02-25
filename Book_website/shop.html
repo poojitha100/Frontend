@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favi.jpg">
+    <title>The Boundless Shelf....</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shop.css">
+    <script>
+        function paym() {
+            window.alert('payment succesful')
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#">
+        <i class="fa-solid fa-user" id="pro"></i>&nbsp; &nbsp;Boundless shelf...&nbsp;<i class="fa-solid fa-book"></i>
+        </a>
+       
+       <div class="dropdown">
+        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <ul class="dropcontent">
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="active">Orders</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+       </div>
+    </header>
+    <section class="paypor"><table>
+        <tr><td colspan="2">
+           <b><u>Fill the Details:</u></b></td></tr>
+        <tr><td>
+            <label for="Customer">Name of Customer:</label></td><td>
+            <input type="text"/></td></tr>
+                <tr><td>
+                    <label for="book">Book Name:</label></td><td>
+                    <input type="text" Value="Sardar Vallabhai Patel" /></td></tr>
+                    <tr><td>
+                            <label for="Amount">Amount:</label></td><td>
+                            <input type="text" value="250/-"/></td></tr>  
+        <tr><td>
+            <label for="Address">Address:</label></td><td>
+            <input type="text" /></td></tr>
+            <tr><td>
+        <label for="UPI">UPI:</label></td><td>
+        <input type="text"/></td></tr>
+        <tr><td>
+        <label for="password" >Password:</label></td><td>
+        <input type="password" value="enter"/></td></tr>
+        <tr><td colspan="2">
+        <a href="close.html"><button onclick="paym()" type="submit">Make Payment </button></a></td></tr>
+        </table>
+    </section>
+    <section class="mob">
+        <table>
+            <tr><td colspan="2">
+                <b><u>Fill the Details:</u></b></td></tr>
+             <tr><td>
+            <tr>
+                <td>
+                    User:
+                </td>
+                <td>
+                    <input type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Book:
+                </td>
+                <td>
+                    <input type="text" Value="Sardar VallaBhai patel"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amount:
+                </td>
+                <td>
+                    <input type="text" value="250/-"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <input type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    UPI:
+                </td>
+                <td>
+                    <input type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password"/>
+                </td>
+            </tr>
+            <tr><td colspan="2">
+                <a href="close.html"><button onclick="paym()" type="submit">Make Payment </button></a></td></tr>
+        </table>
+    </section>
+</body>
+</html>

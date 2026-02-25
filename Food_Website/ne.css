@@ -1,0 +1,10 @@
+#navi {
+    font-size: 40px;
+    
+}
+#navi a {
+    text-decoration: none;
+}
+#navi a:hover {
+    color:red;
+}

@@ -1,0 +1,125 @@
+body {
+    background-image: url(images/hey.jfif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sear{
+    margin-top: 8%;
+    margin-left: 15%;
+    width:70%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.sear i {
+    background-color: gray;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1.3%;
+    width:5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.sear input {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width:93%;
+    padding-left: 1.35%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.single {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 14vw;
+    height:21.5vw;
+    float: left;
+    margin: 0.7%;
+    background-color: white;
+    box-shadow: 3px 3px gray;
+}
+.head1 {
+    margin-top: 5%;
+}
+.headin {
+    margin-top: 30%;
+}
+.im img{
+    width:12vw;
+    height:16vw;
+    margin:1vw;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.im img:hover {
+    width:13vw;
+    height:17vw;
+}
+.inf {
+    text-align: center;
+    overflow-x: auto;
+}
+.inf i {
+    padding-top: 5px;
+    color:sandybrown;
+}
+.riv {
+    padding: 5px;
+    display: inline;
+    float: right;
+    text-decoration: none;
+    float:right;
+}
+@media screen and (max-width:800px){
+    body {
+        background-image: url(images/mobi_item.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sear{
+        margin-top: 8%;
+        margin-left: 10%;
+        width:80%;
+    }
+    .sear i {
+        background-color: gray;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width:10%;
+        padding-left: 3%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .sear input {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width:83%;
+        font-size: large;
+        border-color: white;
+        padding-left: 1.35%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .single {
+        margin-left:2%;
+        margin-bottom: 4%;
+        width: 43vw;
+        height:70vw;
+    }
+    .im img{
+        width:40vw;
+        height:50vw;
+    }
+    .im img:hover {
+        width:42vw;
+        height:53vw;
+        z-index: 3;
+        border-width: 5px;
+        border-color:cornflowerblue;
+
+    }
+}
